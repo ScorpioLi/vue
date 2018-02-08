@@ -1,13 +1,22 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <!--<h1>{{ msg }}</h1>-->
+    <!--<router-view/>-->
+    <firstDemo></firstDemo>
   </div>
 </template>
 
 <script>
+import firstDemo from './components/firstDemo'
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      msg: 'title'
+    }
+  },
+  components: {firstDemo}
 }
 </script>
 
